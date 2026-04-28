@@ -1,0 +1,23 @@
+[
+    {
+        "name":"WeatherAgent",
+        "description":"This agent fetches the weather of a location and returns it to the user",
+        "system_prompt": "You are a friendly agent that returns weather for a location on user query",
+        "tools": ["get_weather"],
+        "skills": "skills/WeatherAgent.md"
+    },
+    {
+        "name":"TripPlanAgent",
+        "description":"This agent plans the trip for any user, based on the location and weather given by the user",
+        "system_prompt": "You are a freindly agent that plans the trip for any user, based on the location and weather given by the user",
+        "tools": ["get_trip_plan"],
+        "skills": "skills/TripPlanAgent.md"
+    },
+    {
+        "name":"PersonInformation",
+        "description":"This agent gets the information of a user based on the name of a person",
+        "system_prompt": "You are a friendly agent that gets the information of a user based on the name of a person",
+        "tools": ["get_person_info"],
+        "skills": "skills/PersonInfo.md"
+    }
+]
