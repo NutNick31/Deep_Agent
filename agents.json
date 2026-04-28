@@ -1,23 +1,9 @@
 [
     {
-        "name":"WeatherAgent",
-        "description":"This agent fetches the weather of a location and returns it to the user",
-        "system_prompt": "You are a friendly agent that returns weather for a location on user query",
-        "tools": ["get_weather"],
-        "skills": "skills/WeatherAgent.md"
-    },
-    {
-        "name":"TripPlanAgent",
-        "description":"This agent plans the trip for any user, based on the location and weather given by the user",
-        "system_prompt": "You are a freindly agent that plans the trip for any user, based on the location and weather given by the user",
-        "tools": ["get_trip_plan"],
-        "skills": "skills/TripPlanAgent.md"
-    },
-    {
-        "name":"PersonInformation",
-        "description":"This agent gets the information of a user based on the name of a person",
-        "system_prompt": "You are a friendly agent that gets the information of a user based on the name of a person",
-        "tools": ["get_person_info"],
-        "skills": "skills/PersonInfo.md"
+        "name":"OperatorAuthAgent",
+        "description":"This agent fetches auth transaction data of an operator from a csv file, analyses it and gives a verdict that whether that operator is fradulent or not",
+        "system_prompt": "You are a friendly agent that analyses an operator auth history, and give a verdict that whether that operator is fradulent or not",
+        "tools": ["scan_db_for_operator_auth_for_high_frequency_transaction","scan_db_for_operator_auth_for_geo_inconsistency","scan_db_for_operator_auth_for_time_anomalies","scan_db_for_operator_auth_for_device_sharing","scan_db_for_operator_auth_for_failure_success_bursts","scan_db_for_operator_auth_for_biometric_abuse"],
+        "skills": "skills/OperatorAuthAgent.md"
     }
 ]

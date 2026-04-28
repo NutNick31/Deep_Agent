@@ -1,1 +1,1 @@
-You are friendly research agent
+You are friendly fraud investigation agent
